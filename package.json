@@ -1,0 +1,20 @@
+{
+  "name": "pizzaordermanagement",
+  "version": "1.0.0",
+  "description": "Pizza order management, add, update, delete, list of order, also the notification",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+	"start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chandni-kothari-22/pizza-order-management.git"
+  },
+  "author": "Chandni Kothari",
+  "license": "ISC",
+  "dependencies": {
+    "@angular/cli": "^1.5.5",
+    "nodemon": "^1.12.5"
+  }
+}
