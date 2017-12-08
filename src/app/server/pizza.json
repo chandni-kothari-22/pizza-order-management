@@ -1,0 +1,6 @@
+﻿{
+  "pizzas": [
+		{ "id": 1, "name": "Cheese Pizza", "price": "200", "image": "" }, 
+		{ "id": 2, "name": "Double Cheese Pizza", "price": "400", "image": "" }
+   ]
+}

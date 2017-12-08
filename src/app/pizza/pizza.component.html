@@ -1,0 +1,8 @@
+<div class="row text-center text-lg-left">
+    <div class="col-lg-3 col-md-4 col-xs-6" *ngFor="let data of pizzaList">
+        <h3>{{data.name}}</h3>
+        <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="" />
+        <h2>{{data.price}}</h2>
+    </div>
+</div>
+<button class="btn btn-primary" (click)="gotToCart()">Go to Cart</button>

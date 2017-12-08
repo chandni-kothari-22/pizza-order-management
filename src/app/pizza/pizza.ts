@@ -1,0 +1,7 @@
+﻿export class Pizza {
+    id: number;
+    name: string;
+    price: string;
+    image: string;
+}
+
