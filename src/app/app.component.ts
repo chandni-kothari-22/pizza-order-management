@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
     template: `<div class="container"><div class="col-lg-6">
     <h1>{{title}}</h1>
     <router-outlet></router-outlet></div></div>`,
-    styleUrls: ['./app.component.css']
+    styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
     title = 'Welcome to Pizza\'s';

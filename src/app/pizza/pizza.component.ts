@@ -17,7 +17,7 @@ export class FilterPipe implements PipeTransform {
 
 @Component({
     templateUrl: './pizza.component.html',
-    styleUrls: ['./pizza.component.css']
+    styleUrls: ['./pizza.component.scss'],
 })
 export class PizzaComponent implements OnInit {
     pizzaList = [];
@@ -50,9 +50,7 @@ export class PizzaComponent implements OnInit {
                 'Pizza added to cart.',
                 '',
                 {
-                    timeOut: 5000,
-                    showProgressBar: true,
-                    pauseOnHover: false,
+                    timeOut: 2000,
                     maxLength: 10
                 }
             )

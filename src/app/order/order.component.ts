@@ -9,7 +9,7 @@ import { Pizza } from '../pizza/pizza';
 @Component({
     selector: 'app-module',
     templateUrl: './order.component.html',
-    styleUrls: ['./order.component.css']
+    styleUrls: ['./order.component.scss']
 })
 export class OrderComponent implements OnInit {
     orderList = [];
@@ -41,9 +41,7 @@ export class OrderComponent implements OnInit {
                     'Pizza removed from cart.',
                     '',
                     {
-                        timeOut: 5000,
-                        showProgressBar: true,
-                        pauseOnHover: false,
+                        timeOut: 2000,
                         maxLength: 10
                     }
                 )
