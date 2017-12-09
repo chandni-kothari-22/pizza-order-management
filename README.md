@@ -1,12 +1,12 @@
 # pizza-order-management
 
-**Set up the project : **
+**Set up the project :**
 ```
 - npm install -g @angular/cli
 - npm install -g json-server
 ```
 
-**To connect to json files run command line window : **
+**To connect to json files run command line window :**
 ```
 - json-server db.js
 ```
