@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-root',
-    template: `<div class="container">
+    template: `<div class="container"><div class="col-lg-6">
     <h1>{{title}}</h1>
-    <router-outlet></router-outlet></div>`
+    <router-outlet></router-outlet></div></div>`,
+    styleUrls: ['./app.component.css']
 })
 export class AppComponent {
     title = 'Welcome to Pizza\'s';

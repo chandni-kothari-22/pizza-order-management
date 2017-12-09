@@ -1,6 +1,9 @@
 ﻿{
   "pizzas": [
-		{ "id": 1, "name": "Cheese Pizza", "price": "200", "image": "" }, 
-		{ "id": 2, "name": "Double Cheese Pizza", "price": "400", "image": "" }
+		{ "id": 1, "name": "Cheese Pizza", "price": "200", "image": "./assets/mozeralla-pizza.png" }, 
+    { "id": 2, "name": "Double Cheese Pizza", "price": "400", "image": "./assets/mozeralla-pizza.png" },
+    { "id": 3, "name": "Farm Fresh Pizza", "price": "240", "image": "./assets/farm-fresh-pizza.jpg" },
+    { "id": 4, "name": "Mushroom Tomatini Pizza", "price": "250", "image": "./assets/mushroom-tomatini-pizza.jpg" },
+    { "id": 5, "name": "Veg Reloaded Pizza", "price": "200", "image": "./assets/veg-reloaded-pizza.jpg" }
    ]
 }

@@ -1,7 +1,31 @@
-<div class="row text-center text-lg-left">
-    <div class="col-lg-3 col-md-4 col-xs-6" *ngFor="let data of orderList">
-        <h3>{{data.name}}</h3>
-        <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="" />
-        <h2>{{data.price}}</h2>
-    </div>
+<div class="row">
+  <div class="col-sm-12">
+    <button class="btn btn-primary btn-md align-right" (click)="gotToPizzas()">Add more pizzas</button>
+  </div>
 </div>
+<simple-notifications [options]="options"></simple-notifications>
+<br/>
+<ul class="list-group">
+  <li class="list-group-item" *ngFor="let data of orderList">
+    <div class="row">
+      <div class="col-sm-4">
+        <img class="img-fluid img-thumbnail image-style" src="{{data.image}}" alt="" />
+      </div>
+      <div class="col-sm-4">
+        <span>{{data.name}}</span>
+        <br/>
+        <span>{{data.price}}</span> Rs
+      </div>
+      <div class="col-sm-4">
+        <button class="btn btn-primary btn-md align-right" (click)="removeFromCart(data.id)">Remove</button>
+      </div>
+    </div>
+  </li>
+  <li class="list-group-item">
+    <div class="row">
+      <div class="col-sm-4">
+        Amount: <span>{{ getSum(orderList) }}</span> Rs
+      </div>
+    </div>
+  </li>
+</ul>

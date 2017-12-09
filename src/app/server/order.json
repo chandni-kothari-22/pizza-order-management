@@ -1,6 +1,4 @@
-﻿{
-  "orders": [
-		{ "id": 1, "name": "Cheese Pizza", "price": "200" }, 
-		{ "id": 2, "name": "Double Cheese Pizza", "price": "400" }
-   ]
-}
+﻿[ 
+  { "id": 1, "name": "Cheese Pizza", "price": "200", "image": "/assets/mozeralla-pizza.png" }, 
+  { "id": 2, "name": "Double Cheese Pizza", "price": "400", "image": "/assets/mozeralla-pizza.png" }
+]

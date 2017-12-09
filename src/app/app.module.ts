@@ -6,24 +6,29 @@ import { AppComponent } from './app.component';
 import { PizzaComponent } from './pizza/pizza.component';
 import { OrderComponent } from './order/order.component';
 import { WebApiGetPromiseService } from './common/common.service';
+import { PizzaOrderService } from './service/pizza.service.component';
 import { HttpModule } from '@angular/http';
 import { Router } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+import { FilterPipe } from './common/filter.pipe';
+import { SimpleNotificationsModule } from 'angular2-notifications';
 
 @NgModule({
   declarations: [
       AppComponent,
       PizzaComponent,
-      OrderComponent
+      OrderComponent,
+      FilterPipe
   ],
   imports: [
       BrowserModule,
       FormsModule,
       CommonModule,
       HttpModule,
-      AppRoutingModule
+      AppRoutingModule,
+      SimpleNotificationsModule.forRoot()
   ],   
-  providers: [WebApiGetPromiseService],
+  providers: [WebApiGetPromiseService, PizzaOrderService],
   bootstrap: [AppComponent]
 })
 export class AppModule {

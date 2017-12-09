@@ -1,8 +1,43 @@
-<div class="row text-center text-lg-left">
-    <div class="col-lg-3 col-md-4 col-xs-6" *ngFor="let data of pizzaList">
-        <h3>{{data.name}}</h3>
-        <img class="img-fluid img-thumbnail" src="http://placehold.it/400x300" alt="" />
-        <h2>{{data.price}}</h2>
+<div class="row">
+    <div class="col-sm-12">
+        <button class="btn btn-primary btn-md align-right" (click)="gotToCart()">Go to Cart</button>
     </div>
 </div>
-<button class="btn btn-primary" (click)="gotToCart()">Go to Cart</button>
+<simple-notifications [options]="options"></simple-notifications>
+<br/>
+<div class="row">
+    <div class="col-md-12">
+        <div class="input-group add-on">
+            <input class="form-control" placeholder="Search.." name="srch-term" [(ngModel)]="filterString" type="text">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit">
+                        <div style="-webkit-transform: rotate(45deg); 
+                        -moz-transform: rotate(45deg); 
+                          -o-transform: rotate(45deg);
+                             transform: rotate(45deg);">
+                            &#9906;
+                        </div>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<br/>
+<ul class="list-group">
+    <li class="list-group-item" *ngFor="let data of (pizzaList | filter : 'name' : filterString)">
+        <div class="row">
+            <div class="col-sm-4">
+                <img class="img-fluid img-thumbnail image-style" src="{{data.image}}" alt="" />
+            </div>
+            <div class="col-sm-4">
+                <span>{{data.name}}</span>
+                <br/>
+                <span>{{data.price}}</span> Rs
+            </div>
+            <div class="col-sm-4">
+                <button class="btn btn-primary btn-md align-right" (click)="addToCart(data)">Add to Cart</button>
+            </div>
+        </div>
+    </li>
+  </ul>
+  <br/>

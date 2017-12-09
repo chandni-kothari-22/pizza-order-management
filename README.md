@@ -1,5 +1,11 @@
 # pizza-order-management
 
-json-server db.js
+Set up the project : 
+-> npm install -g @angular/cli
+-> npm install -g json-server
 
-ng serve
+To connect to json files run command line window : 
+-> json-server db.js
+
+In another command line window :
+-> ng serve
