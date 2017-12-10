@@ -4,7 +4,7 @@ import { Pizza } from './pizza';
 import { WebApiGetPromiseService } from '../common/common.service';
 import { PizzaOrderService } from '../service/pizza.service.component';
 import { NotificationsService } from 'angular2-notifications';
-
+  
 @Pipe({ name: 'filter' })
 export class FilterPipe implements PipeTransform {
   public transform(values: any[], filter: string): any[] {
@@ -17,7 +17,7 @@ export class FilterPipe implements PipeTransform {
 
 @Component({
     templateUrl: './pizza.component.html',
-    styleUrls: ['./pizza.component.scss'],
+    styleUrls: ['./pizza.component.scss']
 })
 export class PizzaComponent implements OnInit {
     pizzaList = [];
